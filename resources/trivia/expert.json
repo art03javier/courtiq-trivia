@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "Who holds the record for the most points scored in a single NBA game?",
+            "options": ["Michael Jordan", "Kobe Bryant", "Wilt Chamberlain", "LeBron James"],
+            "answer": "Wilt Chamberlain"
+        },
+        {
+            "question": "Which NBA team has the most championships in league history?",
+            "options": ["Los Angeles Lakers", "Boston Celtics", "Chicago Bulls", "Golden State Warriors"],
+            "answer": "Boston Celtics"
+        },
+        {
+            "question": "Who is the NBA's all-time leader in assists?",
+            "options": ["Magic Johnson", "John Stockton", "Chris Paul", "Steve Nash"],
+            "answer": "John Stockton"
+        },
+        {
+            "question": "Which player won the NBA MVP award in the 2020-2021 season?",
+            "options": ["LeBron James", "Giannis Antetokounmpo", "Stephen Curry", "Nikola Jokic"],
+            "answer": "Nikola Jokic"
+        },
+        {
+            "question": "In what year did the NBA introduce the three-point line?",
+            "options": ["1975", "1980", "1985", "1990"],
+            "answer": "1979"
+        },
+        {
+            "question": "Which NBA coach holds the record for the most career wins?",
+            "options": ["Phil Jackson", "Gregg Popovich", "Pat Riley", "Don Nelson"],
+            "answer": "Don Nelson"
+        },
+        {
+            "question": "Who is the only player in NBA history to win Defensive Player of the Year four times?",
+            "options": ["Ben Wallace", "Rudy Gobert", "Dwight Howard", "Hakeem Olajuwon"],
+            "answer": "Dwight Howard"
+        },
+        {
+            "question": "Which team drafted Dirk Nowitzki in the 1998 NBA Draft before trading him to the Dallas Mavericks?",
+            "options": ["Milwaukee Bucks", "Boston Celtics", "Los Angeles Clippers", "Dallas Mavericks"],
+            "answer": "Milwaukee Bucks"
+        },
+        {
+            "question": "What is the nickname of the Miami Heat's home arena?",
+            "options": ["The Garden", "The Palace", "The Forum", "AmericanAirlines Arena"],
+            "answer": "AmericanAirlines Arena"
+        },
+        {
+            "question": "Which NBA player famously wore the jersey number 33 during his career?",
+            "options": ["Larry Bird", "Kareem Abdul-Jabbar", "Patrick Ewing", "Shaquille O'Neal"],
+            "answer": "Larry Bird"
+        }
+    ]
+}

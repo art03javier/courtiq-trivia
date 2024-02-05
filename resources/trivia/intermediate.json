@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "Who is the current Commissioner of the NBA?",
+            "options": ["Adam Silver", "David Stern", "Roger Goodell", "Adam Smith"],
+            "answer": "Adam Silver"
+        },
+        {
+            "question": "What two teams have won the most NBA titles?",
+            "options": ["Chicago Bulls & Miami Heat", "Boston Celtics & Los Angeles Lakers", "Golden State Warriors & San Antonio Spurs", "Detroit Pistons & Philadelphia 76ers"],
+            "answer": "Boston Celtics & Los Angeles Lakers"
+        },
+        {
+            "question": "What league did the NBA merge with in 1976?",
+            "options": ["NCAA (National Collegiate Athletic Association)", "ABA (American Basketball Association)", "CBA (Chinese Basketball Association)", "EuroLeague"],
+            "answer": "ABA (American Basketball Association)"
+        },
+        {
+            "question": "What NBA legend was commonly referred to as The Round Mound of Rebound?",
+            "options": ["Karl Malone", "Hakeem Olajuwon", "Charles Barkley", "Patrick Ewing"],
+            "answer": "Charles Barkley"
+        },
+        {
+            "question": "How many divisions does the NBA have?",
+            "options": ["4", "6", "8", "10"],
+            "answer": "6"
+        },
+        {
+            "question": "What company has made official NBA balls for over 40 years?",
+            "options": ["Nike", "Adidas", "Under Armour", "Spalding"],
+            "answer": "Spalding"
+        },
+        {
+            "question": "What year were NBA players officially allowed to compete in the Olympics?",
+            "options": ["1984", "1992", "2000", "2012"],
+            "answer": "1992"
+        },
+        {
+            "question": "What NBA superstars were nicknamed Superman?",
+            "options": ["LeBron James and Kevin Durant", "Dwyane Wade and Dirk Nowitzki", "Chris Paul and James Harden", "Shaquille O’Neal and Dwight Howard"],
+            "answer": "Shaquille O’Neal and Dwight Howard"
+        },
+        {
+            "question": "Which player has won the most NBA titles?",
+            "options": ["LeBron James", "Michael Jordan", "Kobe Bryant", "Bill Russell"],
+            "answer": "Bill Russell"
+        },
+        {
+            "question": "Who is the shortest player to ever win a scoring title?",
+            "options": ["Allen Iverson (6ft)", "Chris Paul (6ft 1in)", "Isaiah Thomas (5ft 9in)", "Spud Webb (5ft 7in)"],
+            "answer": "Allen Iverson (6ft)"
+        }
+    ]
+}

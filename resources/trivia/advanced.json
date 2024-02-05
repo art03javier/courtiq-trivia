@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "What player had the following stat line: 0 points, 28 total rebounds, 10 offensive boards, and 3 assists?",
+            "options": ["Dwight Howard", "Andre Drummond", "DeAndre Jordan", "Dennis Rodman"],
+            "answer": "Dennis Rodman"
+        },
+        {
+            "question": "Who is the only person to win the MVP, Coach of the Year & Executive of the Year?",
+            "options": ["Pat Riley", "Larry Bird", "Phil Jackson", "Red Auerbach"],
+            "answer": "Larry Bird"
+        },
+        {
+            "question": "Who drafted Kobe Bryant straight out of High School in 1996?",
+            "options": ["Los Angeles Lakers", "Charlotte Hornets (He was then traded to the Lakers)", "Orlando Magic", "Chicago Bulls"],
+            "answer": "Charlotte Hornets (He was then traded to the Lakers)"
+        },
+        {
+            "question": "How many years do players need to be retired before being eligible for Hall of Fame induction?",
+            "options": ["2 years", "3 years", "4 years", "5 years"],
+            "answer": "5 years"
+        },
+        {
+            "question": "Which NBA player is known as 'The Admiral'?",
+            "options": ["Shaquille O'Neal", "David Robinson", "Tim Duncan", "Hakeem Olajuwon"],
+            "answer": "David Robinson"
+        },
+        {
+            "question": "What is the longest winning streak in NBA history?",
+            "options": ["28 games by the 2012/13 Miami Heat", "33 games by the 1971/72 Lakers", "20 games by the 2015/16 Golden State Warriors", "26 games by the 1970/71 Milwaukee Bucks"],
+            "answer": "33 games by the 1971/72 Lakers"
+        },
+        {
+            "question": "Which player won the 2000 Slam Dunk Contest?",
+            "options": ["Vince Carter", "Tracy McGrady", "Kobe Bryant", "Allen Iverson"],
+            "answer": "Vince Carter"
+        },
+        {
+            "question": "What jersey numbers did Michael Jordan wear for the Bulls?",
+            "options": ["23, 45 & 12 (12 for 1 game after his jersey was stolen before the game)", "8 & 24", "9 & 33", "3 & 6"],
+            "answer": "23, 45 & 12 (12 for 1 game after his jersey was stolen before the game)"
+        },
+        {
+            "question": "In which NBA season did Kyle Korver achieve his best three-point percentage, shooting an impressive 53.6 percent?",
+            "options": ["2007-08", "2012-13", "2015-16", "2009-10"],
+            "answer": "2009-10"
+        },
+        {
+            "question": "What US state has produced the most NBA players?",
+            "options": ["California", "Texas", "New York", "Florida"],
+            "answer": "California"
+        }
+    ]
+}
