@@ -1,0 +1,233 @@
+/* General Styling */
+body {
+    background-color: rgb(192, 153, 183);
+    overflow-x: hidden;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.button-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.how-to-section .container {
+    margin-top: -80px; /* Adjust the value as needed */
+}
+
+/* Page Transition Styling */
+.hiddenPage {
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateX(-30%);
+}
+
+.visiblePage {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+
+/* Navigation Bar styling */
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  
+  .nav-item {
+    margin: 15px 15px;
+  
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: rgb(133, 119, 194);
+    font-weight: 600;
+  }
+
+
+/* Button Styling */
+.btn.choice,
+.level-selection .choice,
+.multiple-choice .choice {
+    background-color: rgb(133, 119, 194);
+    border: none;
+    font-family: "Courier New", sans-serif;
+    font-size: 1.7rem;
+    color: white;
+    text-align: start;
+    padding: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 1rem;
+    transition: all 0.2s;
+}
+
+.btn.choice:hover,
+.level-selection .choice:hover,
+.multiple-choice .choice:hover {
+    background: rgb(116, 100, 189);
+    color: white;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+}
+
+/* Selected and Answer Styling */
+.level-selection .choice-selected,
+.multiple-choice .choice-selected {
+    background: rgba(172, 204, 135, 0.822) !important;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+}
+
+.multiple-choice .correct-answer {
+    background: rgb(5, 134, 5) !important;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+}
+
+.multiple-choice .incorrect-answer {
+    background: rgba(236, 108, 108, 0.713) !important;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+}
+
+.go-to-trivia.btn{
+    margin-top: 10px;
+    background: rgb(116, 100, 189);
+    color: white;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+}
+
+/* Send Button Styling */
+.send.btn {
+    width: max-content;
+    align-self: center;
+    font-family: "Libre Baskerville", 'Courier New';
+    font-size: 1.7rem;
+    background-color: rgba(172, 204, 135, 0.822);
+    padding: 1rem 5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.send:hover {
+    transform: scale(1.1);
+}
+
+.send:active {
+    transform: scale(1);
+}
+
+/* Score Section Styling */
+
+.next-trivia {
+    display: none;
+}
+
+.final-score h2 {
+    color: white;
+    font-family: "Libre Baskerville", 'Courier New';
+    font-size: 5rem;
+}
+
+.final-score h3 {
+    color: white;
+    font-family: "Russo One", 'sans-serif';
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.score-section {
+    min-height: 100vh;
+    padding: 50px 0;
+    box-sizing: border-box;
+    border: 8px solid white;
+}
+
+/* Basketball Icon Styling */
+.level-1.choice .fa-basketball,
+.level-2.choice .fa-basketball,
+.level-3.choice .fa-basketball,
+.level-4.choice .fa-basketball {
+    transition: transform 0.3s ease-in-out;
+}
+
+.level-1.choice:hover .fa-basketball,
+.level-2.choice:hover .fa-basketball,
+.level-3.choice:hover .fa-basketball,
+.level-4.choice:hover .fa-basketball {
+    transform: translateY(-20px);
+}
+
+/* Footer Styling */
+.footer-section {
+    position: fixed;
+    bottom: 0;
+    font-family: "Russo One", 'sans-serif';
+    font-size: 20px;
+    width: 100%;
+    background-color: rgb(133, 119, 194);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Level Button Styling */
+.material-symbols-outlined.level-icon {
+    font-size: 6em;
+    color: white;
+}
+
+.level-btn .btn {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Question Text Styling */
+h2.question-text {
+    color: white;
+}
+
+.question-section span {
+    font-weight: 800;
+    color:  rgba(172, 204, 135, 0.822);
+    font-family: "Libre Baskerville", sans-serif;
+}
+
+.question-section h3 {
+    color: rgb(133, 119, 194);
+    font-weight: 800;
+}
+
+  /* Scroll To Top Button Styles */
+  #scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    border: 5px solid white; /* Set your desired border color and width */
+    outline: none;
+    background-color: #ff4500; /* Set your desired background color */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #scrollToTop:hover {
+    background-color: #0056b3; /* Change color on hover if needed */
+  }
