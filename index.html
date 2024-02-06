@@ -149,6 +149,80 @@
 
     <!-- Scroll to Top Button -->
     <button onclick="topFunction()" id="scrollToTop" title="Scroll to top">Top</button>
+
+    <script>
+        // jshint esversion: 6
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarMenu = document.getElementById("navbar");
+            const triviaSection = document.getElementById("triviaSection");
+            const howToPlayPage = document.getElementById("how-to-play");
+            const questionPage = document.querySelector(".question-section");
+            const scorePage = document.querySelector(".score-section");
+            const scrollToTopButton = document.getElementById("scrollToTop");
+            const showScrollButtonOnScorePage = true;
+            function handleNavigation(event, targetPage) {
+                event.preventDefault();
+    
+                navbarMenu.style.visibility = "visible";
+                triviaSection.style.display = "none";
+                questionPage.style.display = "none";
+                scorePage.style.display = "none";
+                targetPage.style.display = "block";
+    
+                // Toggle scroll-to-top button visibility after navigation
+                toggleScrollToTopButton(targetPage);
+            }
+    
+            function toggleScrollToTopButton(currentPage) {
+                const isHomePage = currentPage === triviaSection;
+                const isScorePage = currentPage === scorePage;
+
+                // Show the button only if not on the home page, or if explicitly set for the score page
+                scrollToTopButton.style.display = (isHomePage || showScrollButtonOnScorePage || isScorePage) ? "block" : "none";
+            }
+
+    
+            // Initial setup for scroll-to-top button visibility
+            toggleScrollToTopButton(triviaSection);
+    
+            // Event listeners for navigation links
+            document.getElementById("nav-how-to").addEventListener("click", function (event) {
+                handleNavigation(event, howToPlayPage);
+            });
+    
+            document.getElementById("nav-trivia").addEventListener("click", function (event) {
+                handleNavigation(event, triviaSection);
+            });
+    
+            document.getElementById("takeTriviaBtn").addEventListener("click", function () {
+                const isTriviaSectionVisible = getComputedStyle(triviaSection).display !== "none";
+                navbarMenu.style.visibility = isTriviaSectionVisible ? "hidden" : "visible";
+    
+                if (isTriviaSectionVisible) {
+                    triviaSection.style.display = "none";
+                    howToPlayPage.style.display = "block";
+                } else {
+                    triviaSection.style.display = "block";
+                    howToPlayPage.style.display = "none";
+                }
+    
+                // Toggle scroll-to-top button visibility after navigation
+                toggleScrollToTopButton(triviaSection);
+            });
+    
+            // Event listener for scroll-to-top button click
+            scrollToTopButton.onclick = function () {
+                // Use window.location.href to navigate to the home page
+                window.location.href = "http://localhost:8000/"; 
+            };
+    
+            // Event listener for window scroll
+            window.onscroll = function () {
+                // Toggle scroll-to-top button visibility based on the current visible page
+                toggleScrollToTopButton(document.querySelector(".visible-section"));
+            };
+        });
+    </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
