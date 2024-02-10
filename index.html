@@ -23,6 +23,14 @@
     <!-- My custom CSS -->
     <link rel="stylesheet" href="style.css">
 
+     <!-- Custom Styles -->
+     <style>
+        /* Hide how to play header on collapse */
+        .hidden-howToHeader {
+            visibility: hidden;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Bootstrap Navigation Bar -->
@@ -124,7 +132,7 @@
     <section id="how-to-play" class="how-to-section">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
-                <div class="col-12 howHeader">
+                <div class="col-12 how-to-header">
                     <h1 style="color: white;">How To Play NBA Trivia</h1>
                     <p style="font-family: Russo One ; font-size: 26px; color: white;">Welcome to NBA Trivia! Follow these instructions to enjoy the game:</p>
                 </div> 
@@ -166,78 +174,54 @@
 
     <!-- JavaScript Section -->
     <script>
-        // jshint esversion: 6
         document.addEventListener("DOMContentLoaded", function () {
             const navbarMenu = document.getElementById("navbar");
             const triviaSection = document.getElementById("triviaSection");
             const howToPlayPage = document.getElementById("how-to-play");
             const questionPage = document.querySelector(".question-section");
-            const scorePage = document.querySelector(".score-section");
+            const scorePage = document.querySelector(".score-section"); 
             const scrollToTopButton = document.getElementById("scrollToTop");
             const showScrollButtonOnScorePage = true;
+
             function handleNavigation(event, targetPage) {
                 event.preventDefault();
-    
                 navbarMenu.style.visibility = "visible";
-                triviaSection.style.display = "none";
-                questionPage.style.display = "none";
-                scorePage.style.display = "none";
+                [triviaSection, questionPage, scorePage].forEach(page => page.style.display = "none");
                 targetPage.style.display = "block";
-    
-                // Toggle scroll-to-top button visibility after navigation
                 toggleScrollToTopButton(targetPage);
             }
-    
+
             function toggleScrollToTopButton(currentPage) {
                 const isHomePage = currentPage === triviaSection;
                 const isScorePage = currentPage === scorePage;
-
-                // Show the button only if not on the home page, or if explicitly set for the score page
                 scrollToTopButton.style.display = (isHomePage || showScrollButtonOnScorePage || isScorePage) ? "block" : "none";
             }
 
-    
-            // Initial setup for scroll-to-top button visibility
             toggleScrollToTopButton(triviaSection);
-    
-            // Event listeners for navigation links
-            document.getElementById("nav-how-to").addEventListener("click", function (event) {
-                handleNavigation(event, howToPlayPage);
-            });
-    
-            document.getElementById("nav-trivia").addEventListener("click", function (event) {
-                handleNavigation(event, triviaSection);
-            });
-    
+
+            document.getElementById("nav-how-to").addEventListener("click", event => handleNavigation(event, howToPlayPage));
+            document.getElementById("nav-trivia").addEventListener("click", event => handleNavigation(event, triviaSection));
+
             document.getElementById("takeTriviaBtn").addEventListener("click", function () {
                 const isTriviaSectionVisible = getComputedStyle(triviaSection).display !== "none";
                 navbarMenu.style.visibility = isTriviaSectionVisible ? "hidden" : "visible";
-    
-                if (isTriviaSectionVisible) {
-                    triviaSection.style.display = "none";
-                    howToPlayPage.style.display = "block";
-                } else {
-                    triviaSection.style.display = "block";
-                    howToPlayPage.style.display = "none";
-                }
-    
-                // Toggle scroll-to-top button visibility after navigation
+                [triviaSection, howToPlayPage].forEach(page => page.style.display = isTriviaSectionVisible ? "none" : "block");
                 toggleScrollToTopButton(triviaSection);
             });
-    
-            // Event listener for scroll-to-top button click
-            scrollToTopButton.onclick = function () {
-                // Use window.location.href to navigate to the home page
-                window.location.href = "http://localhost:8000/"; 
-            };
-    
-            // Event listener for window scroll
-            window.onscroll = function () {
-                // Toggle scroll-to-top button visibility based on the current visible page
-                toggleScrollToTopButton(document.querySelector(".visible-section"));
-            };
+
+            scrollToTopButton.onclick = () => window.location.href = "http://localhost:8000/";
+
+            window.onscroll = () => toggleScrollToTopButton(document.querySelector(".visible-section"));
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const howToHeader = document.querySelector(".how-to-header");
+            const navbarToggler = document.querySelector(".navbar-toggler");
+
+            navbarToggler.addEventListener("click", () => howToHeader.classList.toggle("hidden-howToHeader"));
         });
     </script>
+
 
     <!-- Bootstrap JavaScript from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
