@@ -23,8 +23,22 @@ Welcome to **CourtIQ Trivia**, a web-based trivia game featuring NBA-themed ques
 4. **Open your web browser:**
     Visit [http://localhost:8000/](http://localhost:8000/) in your browser.
 
-5. **Enjoy playing CourtIQ Trivia:**
+5. **Play CourtIQ Trivia:**
     Follow on-screen instructions to select difficulty, take trivia, answer questions, and view your final score.
+
+6. **For Developers:**
+    - If you want to contribute or modify the code:
+        - Open `index.html` file.
+        - Find the line `scrollToTopButton.onclick` code.
+        - During development (local server), set it to:
+            ```javascript
+            scrollToTopButton.onclick = () => window.location.href = "http://localhost:8000/";
+            ```
+        - For GitHub Pages deployment, set it back to:
+            ```javascript
+            scrollToTopButton.onclick = () => window.location.href = "https://art03javier.github.io/courtiq-trivia/";
+            ```
+
 
 ## Features
 
