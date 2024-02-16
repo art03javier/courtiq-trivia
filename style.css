@@ -158,6 +158,22 @@ section {
     border: 8px solid white;
 }
 
+.level-btn .label {
+    margin-left: 5px; 
+    font-size: 1rem;
+    color: white;
+}
+
+/* Add styles for the link */
+.level-btn button {
+    cursor: pointer; 
+    transition: background-color 0.3s; /* Add a smooth transition effect for background color */
+}
+
+.level-btn button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+}
+
 /* Basketball Icon Styling */
 .level-1.choice .fa-basketball,
 .level-2.choice .fa-basketball,
